@@ -1,4 +1,6 @@
 services:
-  hello:
-    image: alpine
-    command: echo "Hello, Docker Compose!"
+  web:
+    image: nginx:alpine
+    ports:
+      - "8081:80"
+
